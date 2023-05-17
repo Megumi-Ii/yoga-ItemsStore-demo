@@ -13,27 +13,35 @@
 <body>
         <div class="header">
             <div class="header_information"><p>価格改定のお知らせ</p></div>
-            <div class="logo"><img src="" alt=""></div>
+            <div class="logo"><img src="images/logos.png" alt=""></div>
             <div class="header_contents">
                 <div class="membership"><p>会員登録</p><img src="images/member_ship.jpeg" alt=""></div>
                 <div class="favorite"><p>お気に入り</p><img src="images/heart.jpeg" alt=""></div>
                 <div class="login"><p>ログイン</p><img src="images/login.jpeg" alt=""></div>
-                <div class="shop_cart"><p></p></div>
+                <div class="shop_cart"><p>カート</p><img src="images/cart.jpeg" alt=""></div>
             </div>
         </div>
+        <div class="wrapper_main">
             <div class="main_slider">
-
+                <ul class="slider">
+                    <img src="images/dhyana.png" >
+                    <img src="images/dhyana.png" >
+                    <img src="images/dhyana.png" >
+                    <img src="images/dhyana.png" >
+                    <img src="images/dhyana.png" >
+                </ul>
             </div>
+        </div>
             <div class="wrapper">
             <div class="items_lineUP">
                 <div class="items">
-                <div class="newItems"><img src="images/NEW.jpeg" alt="">
-                    <p>新発売</p>
+                <div class="newItems"><img src="images/NEW.jpeg" alt="">  
                 </div>
+                <p>新発売</p>
                 </div>
                 <div class="items">
-                <div class="collabo_items"><img src="" alt="">
-                    <p>コラボ</p>
+                <div class="wear"><img src="images/wear.png" alt="">
+                    <p>ウェア</p>
                 </div>
                 </div>
                 <div class="items">
@@ -42,8 +50,8 @@
                 </div>
                 </div>
                 <div class="items">
-                <div class="props"><img src="" alt="">
-                    <p>プロップス</p>
+                <div class="protein"><img src="images/whey.jpeg" alt="">
+                    <p>健康食品</p>
                 </div>
                 </div>
                 <div class="items">
@@ -57,10 +65,10 @@
                 </div>
             </div>
             </div>
-
+            </div>
             <div class="topics">
                 <h1>TOPICS <span1></span1><span2>特集</span2></h1>
-                <img src="" alt="">
+                <img src="images/new_world.png" alt="">
                 <div class="topics_outline">2023 - 2024 New Catalog</div>
                 <img src="images/new_world.png" alt="">
                 <div class="topics_outline">MAX 80% OFF! アウトレット特集</div>
@@ -69,6 +77,7 @@
             </div>
             <div class="page_top_button">ページトップへ</div>
             <div class="ranking">
+                <div class="wrapper">
             <h1>RANKING <span1></span1><span2>売上ランキング</span2></h1>
             <div class="best_sells">
                 <div class="ranking_1">
@@ -132,7 +141,6 @@
                     <div class="price">¥9,999</div>
                 </div>
             </div>
-        </div>
         <div class="new_items">
             <h1>NEW ITEM <span1></span1><span2>新着商品</span2></h1>
             <div class="new_item_more">more</div>
@@ -205,11 +213,27 @@
                 <div class="news_more"></div>
         </div>
         <div class="info_img">
-            <img src="images/point.png" alt="">
+            <img src="images/present.png" alt="">
             <img src="images/off.png" alt="">
             <img src="images/mat.png" alt="">
         </div>
     </div>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
+    <script>
+    $('.slider').slick({
+  infinite: true,
+  speed: 5000,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  autoplay: true
+});  
+
+    </script>
        <footer>
            <div class="footer_outline">
            <div class="guidance"><p>ご利用ガイド</p></div>
