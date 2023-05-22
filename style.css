@@ -101,16 +101,17 @@ body h1 {
     margin: 10px auto;
 }
 .items {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
     background: rgb(197, 197, 197);
-    margin-left: 5px;
+    margin-left: 10px;
     position: relative;
 }
-.wear,.mat_rug,.props,.protein,.goods {
+.newItems,.wear,.mat_rug,.props,.protein,.goods {
     width: 50px;
-    height: 60px;
+    height: 50px;
+    border-radius: 100%;
 }
 .items:first-child{
     background: pink;
@@ -230,11 +231,24 @@ body h1 {
     margin: 2.9% auto;
     font-size: .9rem;
 }
+.footer_logo  {
+    
+    width: 10%; 
+}
 .footer_logo img {
-    mix-blend-mode: multiply;
+    margin: 0 auto;
+    width: 250px;
+}
+.copyRight {
+    color: white;
+    font-size: .6rem;
+    text-align: center;
+    padding-bottom: 60px;
+    background: black;
 }
 footer {
+    width: 100%;
     background: black;
-    height: 452px;
+    height: auto;
     padding-top: 1%;
 }
