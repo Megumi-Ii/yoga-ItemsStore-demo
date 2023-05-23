@@ -16,6 +16,7 @@
     overflow: hidden;
 }
 img {
+    width: 100%;
     object-fit: cover;
 }
 .header_information {
@@ -60,16 +61,16 @@ img {
 }
 .logo img {
     width: 100px;
-    margin: auto auto 5% 36px;
+    margin: -5% auto 7% 36px;
 }
 .main_slider {
     width: 90%;
     margin: auto;
-    min-height: 180px;
+    min-height: 200px;
 }
 .main_slider img {
     width: 100%;
-    min-height: 200px;
+    min-height: 160px;
 }
 .main_slider .slick-slide {
     transition: all .5s;
@@ -80,6 +81,15 @@ img {
 body h1 {
     font-size: 1rem;
 }
+.outline h1 p {
+    border-right: solid 1px black;
+}
+body h2 {
+    font-size: .8rem;
+}
+.outline {
+    display: flex;
+}
 .membership,.favorite,.login{
     margin: 1%;
     font-size: .7rem;
@@ -88,10 +98,13 @@ body h1 {
     background: rgb(223, 223, 223);
     width: 100%;
     overflow: hidden;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .topics img {
     width: 90%;
-    height: 170px;
+    height: 194px;
     margin: auto 5%;
 }
 .info_img img{
@@ -125,10 +138,11 @@ body h1 {
 }
 .items p{
     width: 100%;
-    font-size: .7rem;
+    font-size: .6rem;
     position: absolute;
     margin: 0 auto;
-    bottom: -20px;
+    bottom: -0px;
+    height: 100%;
 }
 .items_lineUP {
     display: flex;
@@ -214,10 +228,11 @@ body h1 {
     width: 260px;
     width: 100%;
 }
-.news_block 
+.news_more {
+    margin: -45px auto 50px auto;
+}
 .news_block h1  {
-    border-right: solid 1px black;
-    
+    border-right: solid 1px black; 
 }
 .border_line {
     border-bottom: solid 1px lightgray;
@@ -231,13 +246,8 @@ body h1 {
     margin: 2.9% auto;
     font-size: .9rem;
 }
-.footer_logo  {
-    
-    width: 10%; 
-}
 .footer_logo img {
-    margin: 0 auto;
-    width: 250px;
+    width: 200px;
 }
 .copyRight {
     color: white;
