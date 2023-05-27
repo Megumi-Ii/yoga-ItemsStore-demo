@@ -17,8 +17,49 @@
 }
 img {
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
+.close{
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    left: 94%;
+    top: -16px;
+    width: 16px;
+    height: 16px;
+}
+.close::before, .close::after { 
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2px; 
+    height: 22px;
+    background: white;
+}
+.close::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.close::after {
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+.change {
+    text-align: center;
+    font-size: .8rem;
+    color: white;
+    height: 50px;
+    background: rgb(250, 101, 1);
+    position: relative;
+    margin-top: -30px;
+}
+.change p{
+    padding-top: 20px;
+}
+.changed{
+    display: none;
+}
+
 .Nav {
     height: auto;
     transition: all 0.6s;
@@ -53,27 +94,16 @@ img {
     .openNav .span:nth-of-type(3) {
     top:23px;
     }
-.header_information {
-    text-align: center;
-    font-size: .8rem;
-    color: white;
-    height: 40px;
-    background: rgb(250, 101, 1);
-    position: relative;
-    padding-top: 5%;
-    margin-top: -30px;
-    
-}
 .header_block {
     display: flex;
     justify-content:space-between;
-    height: 70px;
+    height: 50px;
 }
 .header_information p{
     margin: -2.5% auto;
 }
 .header_contents {
-    margin: 20px 10px 20px auto;
+    margin: 0px 10px 30px auto;
     display: flex;
 }
 .membership, .favorite,.login,.shopcart{
@@ -97,16 +127,14 @@ img {
 }
 .logo img {
     width: 100px;
-    margin: -5% auto 7% 36px;
+    margin: -20% auto 10% 38px;
 }
 .main_slider {
     width: 90%;
     margin: auto;
-    min-height: 200px;
 }
 .main_slider img {
     width: 100%;
-    min-height: 160px;
 }
 .main_slider .slick-slide {
     transition: all .5s;
@@ -116,11 +144,11 @@ img {
   }
 body h1 {
     font-size: 1rem;
+    margin-left: 5%;
     margin-right: 25px;
 }
-body h1 span {
-    border-right: solid 1px;
-    margin: auto 5px auto;
+.outline p {
+    margin-left: 5%;
 }
 body h2 {
     font-size: .8rem;
@@ -146,10 +174,15 @@ body h2 {
     font-size: .8rem;
     margin: 3px auto 20px 5%;
 }
+
 .topics img {
-    width: 90%;
-    height: 194px;
     margin: auto 5%;
+    max-width: 100%;
+}
+.topics_img img {
+    width: 90vw;
+    min-height: 180px;
+    
 }
 .info_img img{
     width: 100%;
@@ -165,7 +198,7 @@ body h2 {
     position: relative;
     margin-bottom: 50px;
 }
-.newItems,.wear,.mat_rug,.props,.protein,.goods {
+.wear,.mat_rug,.props,.protein,.goods {
     width: 50px;
     height: 50px;
     border-radius: 100%;

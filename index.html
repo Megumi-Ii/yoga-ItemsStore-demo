@@ -12,10 +12,13 @@
 </head>
 <body>
         <div class="header">
+            <div class="change">
+                <p>価格改定のお知らせ</p>
+                <div class="close"></div>
+            </div>
             <div class="Nav">
                 <div class="openNav"><div class="span"></div><div class="span"></div><div class="span"></div></div>
             </div>
-            <div class="header_information"><p>価格改定のお知らせ</p></div>
             <div class="header_block">
             <div class="logo"><img src="images/logos.png" alt=""></div>
             <div class="header_contents">
@@ -69,23 +72,28 @@
             </div>
             </div>
             </div>
-
             <div class="topics">
                 <div class="outline">
-                <h1>TOPICS <p></p></h1><h2>特集</h2>
+                <h1>TOPICS</h1><h2>特集</h2>
                 </div>
+                <div class="topics_img">
                 <img src="images/catalogs.jpeg" alt="">
+                </div>
                 <div class="topics_outline">2023 - 2024 New Catalog</div>
+                <div class="topics_img">
                 <img src="images/sale.jpeg" alt="">
+                </div>
                 <div class="topics_outline">MAX 80% OFF! アウトレット特集</div>
+                <div class="topics_img">
                 <img src="images/grace.jpeg" alt="">
+                </div>
                 <div class="topics_outline">コラボアイテムSALE中！</div>
             </div>
             <div class="page_top_button">ページトップへ</div>
             <div class="ranking">
                 <div class="wrapper">
             <div class="outline">
-            <h1>RANKING </h1><h2>売上ランキング</h2>
+            <h1>RANKING </h1><p></p><h2>売上ランキング</h2>
                     </div>
             <div id="sliderRanking">
             <div class="slide_rank">
@@ -196,7 +204,7 @@
             <div class="news"> 
                 <div class="news_block">
                     <div class="outline">
-                <h1>NEWS <span></span></h1><h2>お知らせ</h2>
+                <h1>NEWS</h1><h2>お知らせ</h2>
                     </div>
                 </div>
                 <div class="news_block">
@@ -257,6 +265,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/js/6-1-1.js"></script>
+    <script>
+        $(function() {
+            $(".close").click(function() {
+                $(".change").toggleClass("changed");
+            });
+        });
+        </script>
     <script>
     $('.slider').slick({
   infinite: true,
