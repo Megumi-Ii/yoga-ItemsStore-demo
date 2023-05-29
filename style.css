@@ -19,7 +19,6 @@ img {
     width: 100%;
     object-fit: fill;
 }
-
 #Nav_check:checked ~ .menu_content {
     left: 0;
 }
@@ -46,9 +45,7 @@ img {
     z-index: 100;
     background:white;
 }
-.Nav_box span,
-.Nav_box span:before,
-.Nav_box span:after {
+.Nav_box span,.Nav_box span:before,.Nav_box span:after {
     content: "";
     display: block;
     height: 2.4px;
@@ -96,7 +93,6 @@ img {
     display: flex;
     margin: 5% auto;
 }
-
 .menu_item img {
     width: 20px;
     height: auto;
@@ -114,11 +110,10 @@ img {
 .menu_item_img {
     width: 35px;
     height: 35px;
-    background: rgb(219, 219, 219);
+    background: rgb(230, 230, 230);
     border-radius: 100%;
     padding: 3%;
     margin-right: 5%;
-    
 }
 .menu_item_img img {
     padding: 5% auto;
@@ -132,10 +127,6 @@ img {
     text-decoration: none;
     padding: 9px 15px 10px 0;
 }
-  
-  
-
-
 .close{
     display: inline-block;
     padding: 5px 10px;
@@ -291,19 +282,18 @@ body h2 {
 .topics h1 {
     margin-left: 5%;
 }
-.topics_outline_1,.topics_outline_2,.topics_outline_3 {
+.topics_outline {
     font-size: .8rem;
     margin: 3px auto 20px 5%;
 }
 .topics img {
     margin: auto 5%;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    width: 100%;
+    height: 100px;
 }
 .topics_img img {
-    width: 90vw;
-    height: 170px;
+    width: 90%;
+    height: auto;
 }
 .info_img img{
     width: 100%;
@@ -311,45 +301,43 @@ body h2 {
     object-fit: cover;
     margin: 10px auto;
 }
+.items_lineUP {
+    display: flex;
+}
 .items {
     width: 100%;
-    border-radius: 100%;
+    height: auto;
     background: rgb(197, 197, 197);
     margin-left: 10px;
     position: relative;
     margin-bottom: 50px;
-}
-.wear,.mat_rug,.props,.protein,.goods {
-    width: 50px;
-    height: 50px;
     border-radius: 100%;
 }
+
 .items:first-child{
     background: rgb(255, 180, 192);
 }
-.newItems {
-    min-width: 70px;
-    min-height: 70px;
-}
+
 .items img {
-    width: 70%;
+    width: 50%;
+    height: auto;
     mix-blend-mode: multiply;
     position: absolute;
-    top: 20%;
-    left: 18%;
+    top: 30%;
+    left: 20%;
 }
 .items p{
     width: 100%;
     font-size: .6rem;
-    position: absolute;
     text-align: center;
-    bottom: -70px;
-    height: 100%;
+    margin-top: 120%;
 }
-.items_lineUP {
-    display: flex;
-    width: 100%;
+
+#slider_rank {
+    white-space:nowrap;
+    overflow: scroll;
 }
+
 .slide_rank img {
     width: 160px;
     margin: auto 5px;
@@ -360,6 +348,10 @@ body h2 {
 }
 .price {
     font-size: .7rem;
+}
+.ranking {
+    margin-top: 40px;
+   
 }
 .new {
     width: 48%;
@@ -447,8 +439,6 @@ body h2 {
 .border_line {
     border-bottom: solid 1px lightgray;
 }
-
-
 details {
     height: 40px;
     transition: .6s;
@@ -567,42 +557,38 @@ html {
 }
 
 
-@media screen and (min-width: 781px) {
-    .info_img img {
-        height: 100%;
-        margin: 2%;
+@media screen and (max-width: 480px) {
+    .newItems img {
+        width: 30%;
     }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
     .wrapper {
-        width: 80%;
+        width: 96%;
     }
-    .items_lineUP {
-        width: 80%;
-    }
+    
 	.items {
         width: 30px;
         height: 30px;
     }
-    .items .newItems {
-        display: flex;
-    }
+ 
     .topics {
-        width: 80%;
-        margin: 5% auto;
+        width: 100%;
+        height: 100%;
+        margin: 10% auto;
     }
-    .topics_contents {
+    .topics_contents{
         display: flex;
         margin: 0 auto;
+        justify-content: space-around;
     }
-    .topics_img {
-        width: 320px;
-        position: relative;
-        margin: 2%;
+    .topics img{
+        width: 100%;
+        height: 160px;
+        margin: auto 1%;
     }
-    .topics_outline_1,.topics_outline_2,.topics_outline_3 {
-        position: absolute;
-        margin: 5%;
+    .topics_outline {
+        margin-top: 5%;
     }
     .slide_rank img{
         width: 180px;
@@ -624,16 +610,7 @@ html {
         height: 110px;
         margin: 2%;
     }
-    .footer_line {
-        display: none;
-    }
-    .footer_contents {
-        display: flex;
-        justify-content: center;
-    }
-    .footer_outline {
-        margin: 1%;
-    }
+    
     .right_arrow,.right_arrow_2 {
         display: inline-block;
         vertical-align: middle;
@@ -673,5 +650,22 @@ html {
       }
       .details {
           margin: 5%;
+      }
+      .footer_line {
+        display: none;
+    }
+    .footer_contents {
+        display: flex;
+        justify-content: center;
+    }
+    .footer_outline {
+        margin: 1%;
+    }
+      @media screen and (min-width: 981px) {
+        .topics_img {
+            width: 320px;
+
+           
+        }
       }
 }
