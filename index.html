@@ -19,7 +19,7 @@
             <div class="Nav">
                 <input type="checkbox" id="Nav_check">
                 <label for="Nav_check" class="Nav_box">
-                  <span></span>
+                  <span></span><span></span><span></span>
                 </label>
                 <div class="menu_content">
                     <ul class="menu_info">
@@ -366,6 +366,14 @@
             });
         });
         </script>
+        <script>
+        $(function(){
+            $('.Nav_box').on('click', function(){
+              $('.menu_content').toggleClass('is-active');
+              $('.Nav_box').toggleClass('is-active');
+            });
+          }());
+          </script>
     <script>
     $('.slider').slick({
   infinite: true,
