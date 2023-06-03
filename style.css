@@ -25,7 +25,7 @@ img {
 .menu_content,.Nav_box {
     background: white;
 }
-.menu_info,.copyRight ,footer {
+.menu_info,.copyRight, .click_button ,footer {
     background: black;
 }
 .menu_content {
@@ -197,9 +197,6 @@ img {
 .header_information p{
     margin: -2.5% auto;
 }
-.header_contents {
-    margin: 0px 10px 30px auto;
-}
 .membership, .favorite,.login,.shopcart{
     width: 55px;
     transition: all .3s;
@@ -208,15 +205,12 @@ img {
     cursor: pointer;
     opacity: .5;
 }
-.shopcart p {
-    opacity: 0;
-}
-.shopcart img {
-    margin: 5% auto;
+.header_contents {
+    margin: -8px 10px 30px auto;
 }
 .header_contents img {
     width: 20px;
-    margin: 0 18%;
+    margin-left: 10px;
 }
 .header_contents p,.main_slider {
     margin: auto;
@@ -228,11 +222,21 @@ img {
 }
 .logo img {
     width: 100px;
-    margin: -20% auto 10% 38px;
+    margin: -30px auto 10px 38px;
+}
+.shopcart p {
+    opacity: 0;
+}
+.shopcart img {
+    width: 25px;
+    margin: 8px auto;
 }
 .main_slider {
     width: 90%;
     transition: all .5s;
+}
+.item_name {
+    margin-top: 13px;
 }
 .main_slider img {
     width: 100%;
@@ -376,8 +380,8 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     background: black;
     color: white;
     text-align: center;
-    padding-top: 12px;
-    letter-spacing: 0.5px;
+    padding-top: 10px;
+    letter-spacing: .5px;
 }
 .item_name,.new_item_more p,.news_more p,.price {
     font-weight: bold;
@@ -451,7 +455,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     border-radius: 100%;
     top: -12px;
     right: -90%;
-    background: black;
     text-align: right;
   }
   .click_button::before {
@@ -588,6 +591,7 @@ html {
         position: relative;
     }
     .search-form {
+        margin-top: -25px;
         align-items: center;
         overflow: hidden;
     }
@@ -622,7 +626,7 @@ html {
         color: white;
     }
     .search-form button::after {
-        width: 20px;
+   
         height: 20px;
         content: '';
     }
@@ -636,7 +640,7 @@ html {
     .header_contents img {
         width: 20px;
         height: 20px;
-        margin-left: -5%;
+        margin-left: 5%;
     }
     .header_contents p {
         margin-left: -5%;
