@@ -29,7 +29,7 @@ img {
     background: black;
 }
 .menu_content {
-    width: 280px;
+    width: 280pxß;
     height: 100%;
     position: fixed;
     top: 0;
@@ -478,9 +478,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     transform: rotate(-45deg);
 
   }
-  details[open] summary::after {
-    transform: rotate(225deg);
-  }
   details p {
     margin: 0;
     color: rgb(0, 132, 255);
@@ -490,7 +487,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     border-bottom: solid 2px rgb(0, 132, 255);
     width: 25%;
   }
-
   details[open] p {
     animation: fadeIn .8s ease;
    }
@@ -562,7 +558,6 @@ html {
     background-color: black;
     color: white;
   }
-  
 @media screen and (max-width: 380px) {
     .newItems img {
         width: 30%;
