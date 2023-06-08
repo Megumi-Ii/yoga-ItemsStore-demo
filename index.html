@@ -46,6 +46,14 @@
                     </li>
                     <div class="borderLine"></div>
                     </ul>
+
+                    <form action="#" class="menu_search_form">
+                        <button type="submit" aria-label="検索">全ての商品</button>
+                        <label>
+                            <input type="text" placeholder="     キーワードを入力">
+                        </label>
+                    </form>
+                    
                   <ul class="menu_list">
                     <div class="borderLine"></div>
                       <h3>MENU</h3>
@@ -376,7 +384,7 @@
             <img src="images/off.png" alt="">
             <img src="images/mat.png" alt="">
         </div>
-    <a class="pagetop" href="#">ページトップ</a>
+    <a class="pagetop" href="#">ページトップへ</a>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -393,6 +401,7 @@
         $(function(){
             $('.Nav_box').on('click', function(){
               $('.menu_content').toggleClass('is-active');
+              $(".menu_content").toggleClass('panelactive');
               $('.Nav_box').toggleClass('is-active');
             });
           }());
