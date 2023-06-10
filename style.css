@@ -86,7 +86,7 @@ img {
 .Nav_box span:last-of-type {
     top: 25px;
 }
-.Nav_box.is-active span:first-of-type,#Nav_check,.search-form   {
+.Nav_box.is-active span:first-of-type,#Nav_check,.search-form,.changed,.menu input    {
     display: none;
 }
 .Nav_box.is-active span:nth-of-type(2) {
@@ -191,9 +191,6 @@ img {
 }
 .change p{
     padding-top: 20px;
-}
-.changed{
-    display: none;
 }
 .Nav {
     height: auto;
@@ -467,9 +464,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
   }
   .menu a {
     font-size: .85rem;
-  }
-  .menu input {
-    display: none;
   }
   .menu label {
     display: block;
