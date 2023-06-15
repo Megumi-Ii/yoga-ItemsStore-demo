@@ -188,7 +188,7 @@ img {
     height: 50px;
     background: rgb(255, 94, 0);
     position: relative;
-    margin-top: -30px;
+    margin-top: -10px;
 }
 .change p{
     padding-top: 20px;
@@ -298,8 +298,9 @@ body h1 {
 }
 .outline .span {
     border-left: solid 1px black;
-    height: 16px;
-    margin-right: 5%;
+    height: 14px;
+    margin-right: 20px;
+    margin-top: 4px;
 }
 .membership,.favorite,.login{
     margin: 1%;
@@ -311,11 +312,22 @@ body h1 {
     background: rgb(245, 245, 245);
     overflow: hidden;
     margin-top: -50px;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 .topics .outline h1 {
     margin-left: 25px;
+    margin-bottom: 20px;
+}
+body h2 {
+    margin-top: 2px;
+    font-size: .73rem;
+}
+body span {
+    margin-bottom: -3px;
+}
+.outline span {
+    margin-top: 5px;
 }
 .items p,.news_block .day {
     font-size: .6rem;
@@ -375,9 +387,8 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 .items p{
     margin: 3% auto;
 }
-#slider_rank {
-    white-space:nowrap;
-    overflow: scroll;
+.slide_rank {
+   margin-top: 25px;
 }
 .slide_rank img,#sells-slider .info_text {
     width: 160px;
@@ -395,6 +406,9 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 }
 .new h1{
     margin: 35% auto 0 auto ;
+}
+.new h2 {
+    text-align: center;
 }
 .new_items,.wrapper .grid,.new_item_more,footer  {
     width: 100%;
@@ -446,7 +460,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     margin-top: 100px;
 }
 .news_more {
-    margin: auto auto 50px 10px;
+    margin: 20px auto 50px 10px;
 }
 .news_more p:hover,.new_item_more p:hover {
     cursor: pointer;
@@ -527,7 +541,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     width: 20px;
     height: 20px;
     position:absolute;
-    right: 4px;
+    right: 3px;
     top: 35px;
     border-radius: 100%;
   }
@@ -540,13 +554,13 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     border-right: white 2px solid;
     transform: rotate(135deg);
     position:absolute;
-    right: 10px;
-    top: 40px;
+    right: 8px;
+    top: 38px;
     margin: auto;
   }
   .menu input[type=checkbox]:checked + label:after{
     transform: rotate(-45deg);
-    top: 43px;
+    top: 42px;
   }
 .border_line {
     width: 98%;
