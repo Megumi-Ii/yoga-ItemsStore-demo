@@ -68,7 +68,7 @@ button {
 .Nav_box,.menu_item,.menu_search_form button,.header_block ,.header_contents,.outline,.items_lineUP,.pagetop   {
     display: flex;
   }
-.Nav_box,.menu_search_form button,.pagetop {
+.Nav_box,.pagetop {
     justify-content: center;
     align-items: center;
   }
@@ -136,20 +136,24 @@ button {
 .menu_item img {
     width: 20px;
     height: auto;
-    mix-blend-mode: multiply;
     position: absolute;
     top: 25%;
     left: 20%;
 }
-.menu_item_img,.menu_item_pink {
+.menu_item_pink img,.menu_item_gray img {
+    mix-blend-mode: multiply;
+}
+.menu_item_img,.menu_item_pink,.menu_item_gray {
     width: 35px;
     height: 35px;
-    background: rgb(230, 230, 230);
     border-radius: 100%;
     padding: 0 10px;
     margin:  1% 5%;
     position: relative;
     transition: .8s;
+}
+.menu_item_gray {
+    background: rgb(235, 235, 235);
 }
 .menu_item_pink {
     background: pink;
@@ -162,7 +166,7 @@ button {
 }
 .menu_link {
     display: block;
-    font-size: 15px;
+    font-size: .9rem;
     box-sizing: border-box;
     color: black;
     margin-bottom: 5px;
@@ -240,6 +244,7 @@ button {
 .menu_search_form {
     padding-top: 15px;
     padding-bottom: 20px; 
+    background: #eeeeee;
 }
 .menu_search_form input {
     width: 96%;
@@ -248,18 +253,38 @@ button {
     border: solid 1px gray;
     opacity: .5;
     box-sizing: border-box;
-    background: #e6edf3;
+    background: white;
     border-radius: 0 0 15px 15px;
     outline: none;
+    font-size: 1rem;
+    letter-spacing: .2px;
 }
-
-.menu_search_form input::placeholder {
-    color: #878787;
-    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%20%3Cpath%20d%3D%22M23.7%2020.8%2019%2016.1c-.2-.2-.5-.3-.8-.3h-.8c1.3-1.7%202-3.7%202-6C19.5%204.4%2015.1%200%209.7%200S0%204.4%200%209.7s4.4%209.7%209.7%209.7c2.3%200%204.3-.8%206-2v.8c0%20.3.1.6.3.8l4.7%204.7c.4.4%201.2.4%201.6%200l1.3-1.3c.5-.5.5-1.2.1-1.6zm-14-5.1c-3.3%200-6-2.7-6-6s2.7-6%206-6%206%202.7%206%206-2.6%206-6%206z%22%20fill%3D%22%23fff%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    margin-right: 10%;
+.menu_search_form p{
+    margin-right: 10px;
+}
+.down_arrows{
+	left: 6px;
+	box-sizing: border-box;
+	width: 6px;
+	height: 6px;
+	border: 6px solid transparent;
+	border-left: 6px solid white;
+    rotate: 90deg;
+    margin: 10px 5px 5px auto;
+}
+.menu_search_form input {
+    position: relative;
+}
+.menu_search_form img {
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    margin-top: 7px;
+    mix-blend-mode: multiply;
 }
 .menu_search_form button {
+    padding: 5px 18px;
+    font-size: .96rem;
     width: 96%;
     height: 32px;
     border: none;
@@ -284,6 +309,13 @@ button {
 .main_slider {
     width: 90%;
     transition: all .5s;
+}
+.slick-dots{
+    position: absolute;
+}
+.slick-dots li{
+    position: relative;
+    bottom: 50px;
 }
 .item_name {
     margin-top: 13px;
@@ -636,6 +668,13 @@ html {
         max-height: 200px;
         height: 50%;
     }
+    .header_contents p {
+        padding-bottom: 20px;
+        letter-spacing: .1px;
+    }
+    .slick-dots li{
+        bottom: -10px;
+    }
 }
 @media screen and (min-width: 768px) {
     .wrapper {
@@ -653,6 +692,14 @@ html {
     .header {
         position: relative;
     }
+    .shopcart {
+        background: rgb(235, 235, 235);
+        border-radius: 999px;
+        margin-bottom: 12px;
+    }
+    .shopcart img{
+        mix-blend-mode: multiply;
+    }
     .search-form {
         margin-top: -25px;
         align-items: center;
@@ -669,11 +716,11 @@ html {
         border-radius: 0 999px 999px 0;
         outline: none;
         margin-right: 5px;
-    }
-    .search-form input::placeholder {
-        color: #878787;
-        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%20%3Cpath%20d%3D%22M23.7%2020.8%2019%2016.1c-.2-.2-.5-.3-.8-.3h-.8c1.3-1.7%202-3.7%202-6C19.5%204.4%2015.1%200%209.7%200S0%204.4%200%209.7s4.4%209.7%209.7%209.7c2.3%200%204.3-.8%206-2v.8c0%20.3.1.6.3.8l4.7%204.7c.4.4%201.2.4%201.6%200l1.3-1.3c.5-.5.5-1.2.1-1.6zm-14-5.1c-3.3%200-6-2.7-6-6s2.7-6%206-6%206%202.7%206%206-2.6%206-6%206z%22%20fill%3D%22%23fff%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E');
+        background: url(../yoga-demo/images/search.jpeg) ;
+        background-size: 20px;
         background-repeat: no-repeat;
+        background-position-x: 155px;
+        background-position-y: 7px;
     }
     .search-form button {
         display: flex;
@@ -687,6 +734,7 @@ html {
         cursor: pointer;
         border-radius: 999px 0 0 999px;
         color: white;
+        position: relative;
     }
     .search-form button::after {
         height: 20px;
@@ -702,10 +750,12 @@ html {
     .header_contents img {
         width: 20px;
         height: 20px;
-        margin-left: 5%;
     }
     .header_contents p {
         margin-left: 5px;
+    }
+    .header_block .down_arrows {
+        margin-left: 10px;
     }
     .main_slider {
         margin-top: 160px;
@@ -718,6 +768,7 @@ html {
     .items_icon,.items_icon_pink {
         position: relative;
         width: 60px;
+        height: 30px;
         padding-top: 40px;
     }
     .items_icon_pink {
@@ -737,7 +788,7 @@ html {
     }
     .topics img{
         height: 100px;
-        margin: auto 1%;
+        margin: auto 2%;
     }
     .topics_outline {
         margin-top: 5%;
@@ -827,12 +878,13 @@ html {
             height: 85vh;
         }
         .topics {
-            width: 80%;
+            width: 90%;
         }
-        .topics_img img{
+        .topics img{
             width: 320px;
             height: 130px;
             object-fit: cover;
+            padding-right:5%;
         }
         .news {
             width: 100%;
