@@ -292,8 +292,8 @@ button {
     border-radius: 15px 15px 0 0 ;
 }
 .menu_search_form button::after {
-    height: 20px;
     content: '';
+    height: 20px;
 }
 .logo img {
     width: 100px;
@@ -307,7 +307,8 @@ button {
     margin: 8px auto;
 }
 .main_slider {
-    width: 90%;
+    width: 90vw;
+    height: auto;
     transition: all .5s;
 }
 .slick-dots{
@@ -481,7 +482,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     letter-spacing: .5px;
 }
 .item_name,.new_item_more p,.news_more p,.price, .menu p,.menu a  {
-    font-weight: bold;
+    font-weight: 600;
 }
 .item_outline {
     margin: 10px auto;
@@ -506,7 +507,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 }
 .news_more p:hover,.new_item_more p:hover {
     cursor: pointer;
-    color: palevioletred; 
+    color: rgb(167, 6, 60); 
 }
 .news_sentence {
     margin: 2px auto;
@@ -559,7 +560,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     -ms-transition: padding-bottom 0.5s, padding-top 0.5s;
     -o-transition: padding-bottom 0.5s, padding-top 0.5s;
   }
-  
   #menu_bar01:checked ~ #links01 li,
   #menu_bar02:checked ~ #links02 li, 
   #menu_bar03:checked ~ #links03 li,
