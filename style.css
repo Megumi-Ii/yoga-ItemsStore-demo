@@ -140,7 +140,7 @@ button {
     top: 25%;
     left: 20%;
 }
-.menu_item_pink img,.menu_item_gray img {
+.menu_item_pink img,.menu_item_gray img,.menu_search_form img,.items img  {
     mix-blend-mode: multiply;
 }
 .menu_item_img,.menu_item_pink,.menu_item_gray {
@@ -166,7 +166,6 @@ button {
 }
 .menu_link {
     display: block;
-    font-size: .9rem;
     box-sizing: border-box;
     color: black;
     margin-bottom: 5px;
@@ -280,7 +279,6 @@ button {
     position: absolute;
     right: 20px;
     margin-top: 7px;
-    mix-blend-mode: multiply;
 }
 .menu_search_form button {
     padding: 5px 18px;
@@ -380,7 +378,7 @@ body span {
 body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.new_item_more p,.news_more p,.menu_search_form   {
     font-size: .8rem;
 }
-.menu_list h3,.pagetop,.footer_outline p {
+.menu_link,.menu_list h3,.pagetop,.footer_outline p {
     font-size: .9rem;
 }
 .topics_outline {
@@ -389,7 +387,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 .topics img {
     margin: auto 5%;
     height: 80px;
-    transition: all .5s;
 }
 .topics_img img {
     width: 90%;
@@ -420,7 +417,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 .items img {
     width: 50%;
     height: auto;
-    mix-blend-mode: multiply;
     position: absolute;
     top: 30%;
     left: 25%;
@@ -440,7 +436,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     margin-top: 30px;
     margin-bottom: -20px;
 }
-.ranking img {
+.topics img,.ranking img {
     transition: all .5s;
 }
 .new {
