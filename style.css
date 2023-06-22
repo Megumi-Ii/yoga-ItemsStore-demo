@@ -23,10 +23,10 @@ button {
     -webkit-appearance: none;
     appearance: none;
 }
-.arrows {
+.arrows,.menu_link  {
     color: black;
 }
-.Nav_box,.menu_search_form button,.menu label {
+.Nav_box,.menu_search_form button,.menu label,.news_more p:hover,.new_item_more p:hover,.info_img img:hover {
     cursor: pointer;
 }
 .menu_content,.Nav_box,.close::before, .close::after {
@@ -167,7 +167,6 @@ button {
 .menu_link {
     display: block;
     box-sizing: border-box;
-    color: black;
     margin-bottom: 5px;
     padding: 9px 15px 10px 0;
 }
@@ -345,7 +344,8 @@ body h1 {
 .membership,.favorite,.login{
     margin: 1%;
 }
-.main_slider img ,.topics,.topics img,.info_img img,.items,.items p,.new_items .new,.topics,.menu_search_form,.menu_link,.borderLine   {
+.main_slider img ,.topics,.topics img,.info_img img,.items,.items p,.new_items .new,.topics,
+.menu_search_form,.menu_link,.borderLine,.new_items,.wrapper .grid,.new_item_more,footer    {
     width: 100%;
 }
 .topics {
@@ -448,9 +448,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 .new h2 {
     text-align: center;
 }
-.new_items,.wrapper .grid,.new_item_more,footer  {
-    width: 100%;
-}
 .new_items img,.item_outline,.item_name {
     width: 250px;
     width: 100%;
@@ -502,7 +499,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     margin: 20px auto 50px 10px;
 }
 .news_more p:hover,.new_item_more p:hover {
-    cursor: pointer;
     color: rgb(167, 6, 60); 
 }
 .news_sentence {
@@ -519,7 +515,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 }
 .info_img img:hover {
     opacity: .5;
-    cursor: pointer;
 }
 .menu,.menu li {
     width: 98%;
