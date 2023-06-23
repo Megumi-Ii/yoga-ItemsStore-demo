@@ -35,10 +35,12 @@ button {
 .menu_info,.menu_search_form button,.new_item_more p,.news_more p, .menu .button ,.copyRight, .click_button ,footer {
     background: black;
 }
+.menu_content, .Nav_box,.pagetop  {
+    position: fixed;
+}
 .menu_content {
     width: 265px;
     height: 100%;
-    position: fixed;
     top: 0;
     right: 5%;
     z-index: 90;
@@ -56,7 +58,6 @@ button {
     transform: translateX(55vw);
   }
   .Nav_box {
-    position: fixed;
     top: 1%;
     left: 2%;
     height: 40px;
@@ -72,7 +73,7 @@ button {
     justify-content: center;
     align-items: center;
   }
-.items p,.change,.new h1,.menu_search_form ,.new p,.new_item_more p,.news_more p,.footer_outline p,.copyRight,footer{ 
+.items p,.change,.new h1,.menu_search_form ,.new p,.new_item_more p,.news_more p,.new h2,.footer_outline p,.copyRight,footer{ 
     text-align: center;
 }
 .Nav_box span:first-of-type,.Nav_box span:nth-of-type(2),.Nav_box span:last-of-type{
@@ -426,7 +427,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     margin: 3% auto;
 }
 .slide_rank {
-   margin-top: 25px;
+    margin-top: 25px;
 }
 .slide_rank img,#sells-slider .info_text {
     width: 160px;
@@ -444,9 +445,6 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 }
 .new h1{
     margin: 35% auto 0 auto ;
-}
-.new h2 {
-    text-align: center;
 }
 .new_items img,.item_outline,.item_name {
     width: 250px;
@@ -629,7 +627,6 @@ html {
 .pagetop {
     width:25%;
     height: 42px;
-    position: fixed;
     right: 0px;
     bottom: 10px;
     background: rgb(175, 175, 175);
@@ -866,11 +863,34 @@ html {
         .search-form {
             display: flex;
         }
+    .items_lineUP {
+        position: absolute;
+        top: 180px;
+        width: 60%;
+        margin: auto 10%;
+    }
+    .items_icon,.items_icon_pink {
+        position: relative;
+        width: 50px;
+        height: 30px;
+        padding-top: 35px;
+    }
         .main_slider {
+            margin-top: 80px;
             height: 85vh;
+        }
+        .main_slider img {
+            max-height: 520px;
+            height: 100%;
+        }
+        .new_items {
+            padding-right: 30px;
         }
         .topics {
             width: 90%;
+        }
+        .topics .outline {
+            margin: 20px 40px ;
         }
         .topics img{
             width: 320px;
