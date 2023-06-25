@@ -329,6 +329,9 @@ button {
 .main_slider.slick-slide.slick-center{
     opacity: 1;
   }
+.main_slider {
+    width: 80%;
+}
 body h1 {
     font-size: 1rem;
     margin-right: 20px;
@@ -345,7 +348,7 @@ body h1 {
 .membership,.favorite,.login{
     margin: 1%;
 }
-.main_slider img ,.topics,.topics img,.info_img img,.items,.items p,.new_items .new,.topics,
+.topics,.topics img,.info_img img,.items,.items p,.new_items .new,.topics,
 .menu_search_form,.menu_link,.borderLine,.new_items,.wrapper .grid,.new_item_more,footer    {
     width: 100%;
 }
@@ -397,6 +400,9 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     height: 140px;
     object-fit: cover;
     margin: 10px auto;
+}
+.items_lineUP {
+    margin: 50px auto;
 }
 .items {
   border-radius: 50%;
@@ -637,14 +643,24 @@ html {
     .newItems img {
         width: 30%;
     }
-    .header_contents {
-        display: none;
-    }
     .header_block .logo {
         margin-left: -10%;
     }
     summary {
         font-size: .6rem;
+    }
+    .menu a {
+        font-size: .7rem;
+    }
+    .menu .button {
+        top: 13px;
+    }
+    .menu label::after {
+        top: 17px;
+    }
+    .menu input[type=checkbox]:checked + label:after{
+        transform: rotate(-45deg);
+        top: 20px;
     }
     .pagetop {
         font-size: .7rem;
@@ -747,17 +763,17 @@ html {
         margin-left: 10px;
     }
     .main_slider {
-        margin-top: 100px;
+        margin-top: 160px;
     }
     .main_slider img {
         min-height: 300px;
-        height: 10%;
+        height: 100%;
     }
     .items_lineUP {
         position: absolute;
         top: 180px;
-        width: 80%;
-        margin-bottom: 50px;
+        width: 90%;
+        margin: auto 5%;
     }
     .items_icon,.items_icon_pink {
         position: relative;
@@ -868,18 +884,18 @@ html {
         .search-form {
             display: flex;
         }
-    .items_lineUP {
-        position: absolute;
-        top: 180px;
-        width: 80%;
-        margin: 0 auto ;
-    }
+        .items_lineUP {
+            position: absolute;
+            top: 180px;
+            width: 80%;
+            margin: 0 auto ;
+       }
         .main_slider {
             margin-top: 90px;
             height: 82vh;
         }
         .main_slider img {
-            max-height: 400px;
+            max-height: 480px;
             height: 100%;
         }
         .new_items {
