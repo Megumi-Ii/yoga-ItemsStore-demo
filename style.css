@@ -6,16 +6,15 @@
     letter-spacing: 1px;
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, sans-serif;
 }
-.wrapper_main,.header {
+.header {
     width: 100%;
 }
 .wrapper{
-    width: 94%;
+    width: 96%;
     margin: 0 auto;
     overflow: hidden;
 }
 img {
-    width: 100%;
     object-fit: fill;
 }
 button {
@@ -38,6 +37,7 @@ button {
 .menu_content, .Nav_box,.pagetop  {
     position: fixed;
 }
+/* menu page start*/
 .menu_content {
     width: 265px;
     height: 100%;
@@ -171,6 +171,9 @@ button {
     margin-bottom: 5px;
     padding: 9px 15px 10px 0;
 }
+/* menu page end */
+
+/* header start */
 .close{
     display: inline-block;
     padding: 5px 10px;
@@ -294,8 +297,8 @@ button {
     height: 20px;
 }
 .logo img {
-    width: 100px;
-    margin: -30px auto 10px 38px;
+    width: 90px;
+    margin: -30px auto 5px 38px;
 }
 .shopcart p {
     opacity: 0;
@@ -304,20 +307,33 @@ button {
     width: 25px;
     margin: 8px auto;
 }
-.main_slider {
-    width: 90vw;
-    height: auto;
-    transition: all .5s;
+/* header end */
+
+/* main start*/
+.slick-next.slick-arrow::before,.slick-prev.slick-arrow::before {
+    color: black;
 }
 .slick-dots{
     position: absolute;
+    height: 0px;
+}
+ul.slider.slick-initialized.slick-slider.slick-dotted {
+    margin-bottom: 20px;
 }
 .slick-dots li{
     position: relative;
-    bottom: 50px;
+    bottom: 65px;
 }
 .item_name {
     margin-top: 13px;
+}
+.wrapper_main {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+}
+.wrapper_main img{ 
+    height: 240px;
 }
 .main_slider:hover,.items:hover,.topics img:hover,.ranking img:hover {
     cursor: pointer;
@@ -326,12 +342,12 @@ button {
 .main_slider .slick-slide {
     transition: all .5s;
   }
-.main_slider.slick-slide.slick-center{
+.main_slider.slick-slide.slick-center {
     opacity: 1;
   }
-.main_slider {
-    width: 80%;
-}
+/* main end */
+
+
 body h1 {
     font-size: 1rem;
     margin-right: 20px;
@@ -352,16 +368,33 @@ body h1 {
 .menu_search_form,.menu_link,.borderLine,.new_items,.wrapper .grid,.new_item_more,footer    {
     width: 100%;
 }
+
+/* font size */
+.items p,.news_block .day{
+    font-size: .6rem;
+}
+.membership,.favorite,.login,.price,.item_outline,.menu p,.new_price    {
+    font-size: .7rem;
+}
+body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.new_item_more p,.news_more p,.menu_search_form   {
+    font-size: .8rem;
+}
+.menu_link,.menu_list h3,.pagetop,.footer_outline p {
+    font-size: .9rem;
+}
+/* font size end*/
+
+/* topics */
 .topics {
     background: rgb(245, 245, 245);
     overflow: hidden;
     margin-top: -50px;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .topics .outline h1 {
     margin-left: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 body h2 {
     margin-top: 2px;
@@ -373,41 +406,30 @@ body span {
 .outline span {
     margin-top: 5px;
 }
-.items p,.news_block .day {
-    font-size: .6rem;
-}
-.membership,.favorite,.login,.price,.item_outline,.menu p   {
-    font-size: .7rem;
-}
-body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.new_item_more p,.news_more p,.menu_search_form   {
-    font-size: .8rem;
-}
-.menu_link,.menu_list h3,.pagetop,.footer_outline p {
-    font-size: .9rem;
-}
 .topics_outline {
-    margin: 3px auto 20px 5%;
+    margin: 2px auto 19px 5%;
 }
 .topics img {
-    margin: auto 5%;
-    height: 80px;
+    margin: auto 4%;
 }
 .topics_img img {
-    width: 90%;
-    height: auto;
+    width: 92%;
+    height: 172px;
 }
+/* topics end*/
+
 .info_img img{
     height: 140px;
     object-fit: cover;
     margin: 10px auto;
 }
 .items_lineUP {
-    margin: 50px auto;
+    margin: 0px auto;
+    padding-top: -10px;
 }
 .items {
   border-radius: 50%;
-  margin: 0 auto 15% auto;
-  margin-left: 2%;
+  margin: 0 auto 15% 2%;
   transition: .8s;
 }
 .items_icon,.items_icon_pink {
@@ -453,7 +475,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     margin: 35% auto 0 auto ;
 }
 .new_items img,.item_outline,.item_name {
-    width: 250px;
+    width: 252px;
     width: 100%;
     transition: .8s;
 }
@@ -464,6 +486,13 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     border-bottom: solid 1px;
     width: 20px;
     margin: 15px auto -10px auto;
+}
+.ranking .outline {
+    margin-bottom: -2px;
+}
+.item_name {
+    margin-top: 6px;
+    letter-spacing: .5px;
 }
 .item_name:hover {
     opacity: .6;
@@ -478,8 +507,8 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
     padding-top: 10px;
     letter-spacing: .5px;
 }
-.item_name,.new_item_more p,.news_more p,.price, .menu p,.menu a  {
-    font-weight: 600;
+.item_name,.new_item_more p,.news_more p, .menu p,.menu a  {
+    font-weight: bold;
 }
 .item_outline {
     margin: 10px auto;
@@ -494,13 +523,14 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 }
 .price {
     letter-spacing: 0.2px;
-    font-size: .4rem;
+    font-size: .6rem;
+    text-align: center;
 }
 .news {
     margin-top: 100px;
 }
 .news_more {
-    margin: 20px auto 50px 10px;
+    margin: 20px auto 50px 20px;
 }
 .news_more p:hover,.new_item_more p:hover {
     color: rgb(167, 6, 60); 
@@ -511,10 +541,16 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 .outline h1,.news_block h1  {
     height: 100%; 
     height: 18px;
-    margin-left: 15px;
+}
+.news_block .outline {
+    margin: -10px auto 10px 20px;
+}
+.info_img {
+    width: 94%;
+    margin: auto 3%;
 }
 .info_img img {
-    margin: 10px auto;
+    margin: 7.5px auto;
     transition: .8s;
 }
 .info_img img:hover {
@@ -609,6 +645,7 @@ body h2 ,.change,.topics_outline,.new h2,.news_sentence ,details p,.item_name,.n
 }
 .footer_outline p {
     margin: 2.8% auto;
+    padding: 1.2px;
 }
 .footer_outline p:hover {
     cursor: pointer;
@@ -670,15 +707,17 @@ html {
 }
 @media screen and (min-width: 580px){
     .info_img img{
-        max-height: 200px;
         height: 50%;
+    }
+    .menu_info img{
+        margin-top: -5px;
     }
     .header_contents p {
         padding-bottom: 20px;
         letter-spacing: .1px;
     }
-    .slick-dots li{
-        bottom: -10px;
+    .topics_img img {
+        height: auto;
     }
 }
 @media screen and (min-width: 768px) {
