@@ -732,20 +732,25 @@ footer {
        height: 220px;
     }
     .menu_info img{
-       
         margin-top: -5px;
     }
     .header_contents p {
         padding-bottom: 20px;
         letter-spacing: .1px;
     }
+    .main_slider {
+        width: auto;
+    }
+    .main_slider img {
+        height: 275px;
+    }
     .topics_img {
         width: 100%;
         height: auto;
     }
     .topics_img img {
-        height: 224px;
-        object-fit: fill;
+        height: 266px;
+     
     }
 }
 @media screen and (min-width: 768px) {
@@ -790,17 +795,13 @@ footer {
         margin-left: 10px;
     }
     .main_slider {
-        margin-top: 160px;
-    }
-    .main_slider img {
-        min-height: 300px;
-        height: 100%;
+        margin-top: 120px;
     }
     .items_lineUP {
         position: absolute;
         top: 180px;
         width: 90%;
-        margin: auto 5%;
+        margin: -30px auto ;
     }
     .items_icon,.items_icon_pink {
         position: relative;
@@ -879,11 +880,11 @@ footer {
         padding-bottom: 90px;
         margin-bottom: 6px;
       }
-    .news_more {
+      .news_more {
         margin-top: -100px;
         margin-left: 44px;
         margin-bottom: 100px;
-    }
+      }
       .newsBlocks {
         width: 100%;
         margin: 0 auto;
@@ -901,42 +902,42 @@ footer {
       .footer_line {
         display: none;
     }
-    .footer_contents {
+      .footer_contents {
         justify-content: center;
     }
-    .footer_outline {
+      .footer_outline {
         margin: auto 1% 5% 1%;
     }
-      @media screen and (min-width: 981px) {
+    @media screen and (min-width: 981px) {
         .wrapper {
             width: 80%;
         }
         .search-form {
             display: flex;
         }
-        
         .items_lineUP {
             position: absolute;
             top: 180px;
             width: 80%;
-            margin: 0 auto ;
        }
         .main_slider {
-            margin-top: 90px;
-            height: 82vh;
+            margin-top: 70px;
+            height: 400px;
         }
         .main_slider img {
-            max-height: 480px;
-            height: 100%;
+            height: 60%;
+            height: 440px;
         }
         .new_items {
-            padding-right: 30px;
+            width: 100%;
         }
         .topics {
+            padding-top: 40px;
             width: 90%;
+            padding-bottom: 50px;
         }
         .topics .outline {
-            margin: 20px 40px ;
+            margin: 20px auto 0px auto ;
         }
         .topics img{
             width: 320px;
