@@ -499,7 +499,7 @@ body span {
     transition: .8s;
 }
 .new_items img {
-    height: 60%;
+    height: 80%;
     object-fit: cover;
 }
 .new_items img:hover {
@@ -562,6 +562,7 @@ body span {
 .news_more p:hover,.new_item_more p:hover {
     color: rgb(167, 6, 60); 
 }
+
 .news_sentence {
     margin: 2px auto;
 }
@@ -573,7 +574,7 @@ body span {
     margin: -10px auto 10px 20px;
 }
 .menu,.menu li {
-    width: 98%;
+    width: 100%;
 }
 .menu p {
     margin: 5px auto 10px auto ;
@@ -672,14 +673,13 @@ body span {
 }
 /* info img end*/
 
-
 /* footer */
 .footer_line {
     border-bottom: solid 0.1px rgb(189, 189, 189);
 }
 .footer_outline p {
-    margin: 2.8% auto;
-    padding: 1.2px;
+    margin: 13.4px auto;
+    padding: 1.4px;
 }
 .footer_outline p:hover {
     cursor: pointer;
@@ -722,6 +722,9 @@ footer {
     .topics_img img {
         object-fit: contain;
     }
+    .footer_outline {
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width: 580px){
     .Nav {
@@ -742,7 +745,9 @@ footer {
         width: auto;
     }
     .main_slider img {
-        height: 275px;
+        height: 80%;
+        max-height: 320px;
+        width: auto;
     }
     .topics_img {
         width: 100%;
@@ -750,7 +755,6 @@ footer {
     }
     .topics_img img {
         height: 266px;
-     
     }
 }
 @media screen and (min-width: 768px) {
@@ -797,10 +801,15 @@ footer {
     .main_slider {
         margin-top: 120px;
     }
+    .main_slider img {
+        height: 80%;
+        max-height: 540px;
+        width: auto;
+    }
     .items_lineUP {
         position: absolute;
-        top: 180px;
-        width: 90%;
+        top: 210px;
+        width: 88%;
         margin: -30px auto ;
     }
     .items_icon,.items_icon_pink {
@@ -845,8 +854,11 @@ footer {
         margin-bottom: 60px;
     }
     .info_img img {
-        height: 68px;
-        margin: 2% ;
+        min-width: 130px;
+        width: 100%;
+        max-height: 80px;
+        height: 100%;
+        margin: 1.8% ;
     }
     .right_arrow,.right_arrow_2 {
         display: inline-block;
@@ -885,32 +897,51 @@ footer {
         margin-left: 44px;
         margin-bottom: 100px;
       }
-      .newsBlocks {
+    .newsBlocks {
         width: 100%;
         margin: 0 auto;
-      }
-      .news_block .outline {
+    }
+    .news_block .outline {
         margin-top: -100px;
         margin-bottom: 80px;
-      }
-      .details {
+    }
+    .details {
         margin: 5%;
-      }
-      footer {
-        padding-top: 30px;
-      }
-      .footer_line {
+    }
+    .new_items .new {
+        width: 300px;
+    }
+    .new_items img {
+        min-width: 200px;
+        width: 100%;
+        min-height: 200px;
+        height: 70%;
+    }
+    .new {
+        width: 400px;
+    }
+    /* footer 768px~*/
+    footer {
+        padding-top: 36px;
+    }
+    .footer_line {
         display: none;
     }
-      .footer_contents {
+    .footer_contents {
         justify-content: center;
     }
-      .footer_outline {
-        margin: auto 1% 5% 1%;
+    .footer_logo img {
+        width: 200px;
+        height: 140px;
+        margin:  20px auto -40px auto ;
     }
+    .copyRight {
+        padding-bottom: 80px;
+    }
+    /* footer 768px~ end*/
     @media screen and (min-width: 981px) {
         .wrapper {
-            width: 80%;
+            width: 90%;
         }
         .search-form {
             display: flex;
@@ -918,19 +949,18 @@ footer {
         .items_lineUP {
             position: absolute;
             top: 180px;
-            width: 80%;
+            width: 76%;
+            justify-content: center;
+            text-align: center;
        }
         .main_slider {
             margin-top: 70px;
-            height: 400px;
         }
         .main_slider img {
-            height: 60%;
-            height: 440px;
+            height: 100%;
+            max-height: 540px;
         }
-        .new_items {
-            width: 100%;
-        }
+
         .topics {
             padding-top: 40px;
             width: 90%;
@@ -948,6 +978,10 @@ footer {
         .news {
             width: 100%;
         }
+        .info_img img {
+            max-height: 100px;
+            height: 100%;
+        }
     @media screen and (min-width: 1051px) {
         .menu .button {
             top: 13px;
@@ -963,7 +997,8 @@ footer {
             top: 20px;
         }
         .search-form {
-            margin-top: -25px;
+            margin-top: -80px;
+            margin-left: 50px;
             align-items: center;
             overflow: hidden;
         }
