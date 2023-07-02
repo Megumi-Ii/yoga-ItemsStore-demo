@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: 1px;
+    letter-spacing: .4px;
     font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, sans-serif;
 }
 .header {
@@ -750,8 +750,12 @@ footer {
     .items_lineUP {
         margin-bottom: 30px;
     }
-    .items_lineUP p {
-        font-size: .3rem;
+    .items p {
+        font-size: 0.2rem;
+        letter-spacing: 0.2px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
     }
     .items_icon,.items_icon_pink {
         width: 80%;
