@@ -330,6 +330,17 @@ button {
 /* header end */
 
 /* main */
+.main_slider {
+    position: relative;
+}
+.slick-prev.slick-arrow {
+    margin-left: 25px;
+    z-index: 999;
+}
+.slick-next.slick-arrow {
+    margin-right: 25px;
+    z-index: 999;
+}
 .slick-next.slick-arrow::before,.slick-prev.slick-arrow::before {
     color: black;
 }
@@ -442,12 +453,12 @@ body span {
     margin: 10px auto;
 }
 .items_lineUP {
-    margin: 0px auto;
+    margin: 20px auto;
     padding-top: -10px;
 }
 .items {
   border-radius: 50%;
-  margin: 0 auto 15% 2%;
+  margin: 0 auto 16% 2%;
   transition: .8s;
 }
 .items_icon,.items_icon_pink {
