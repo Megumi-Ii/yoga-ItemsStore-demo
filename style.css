@@ -750,12 +750,14 @@ footer {
     .items_lineUP {
         margin-bottom: 30px;
     }
+    .items {
+        width: 100%;
+    }
     .items p {
+        width: 100%;
         font-size: 0.2rem;
         letter-spacing: 0.2px;
-        margin: auto;
-        text-align: center;
-        justify-content: center;
+        margin-left: -10%;
     }
     .items_icon,.items_icon_pink {
         width: 80%;
