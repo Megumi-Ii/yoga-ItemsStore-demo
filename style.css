@@ -750,9 +750,13 @@ footer {
     .items_lineUP {
         margin-bottom: 30px;
     }
-    .items p {
-        font-size: .4rem;
+    .items_lineUP p {
+        font-size: .3rem;
     }
+    .items_icon,.items_icon_pink {
+        width: 80%;
+        padding-top: 80%;
+      }
     .pagetop {
         font-size: .7rem;
         padding: 2%;
